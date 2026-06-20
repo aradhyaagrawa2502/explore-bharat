@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Bharat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <nav>
+    <div class="logo">
+        Explore Bharat
+    </div>
+<ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+      <li><a href="planner.html">Trip Planner</a></li>
+    <li><a href="#reviews">Give Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+    
+</ul>
+</nav>
+<section class="hero">
+
+    <div class="overlay">
+
+        <h1>EXPLORE BHARAT</h1>
+
+        <h2>एक सफर, अनगिनत यादें</h2>
+
+        <p>
+            Discover breathtaking destinations,
+            plan your perfect trip and create memories for a lifetime.
+        </p>
+
+<a href="#destinations" class="explore-btn">
+    Explore Now
+</a>
+
+        <div class="search-box" id="destinations">
+    <input type="text" id="searchInput" placeholder="Search Destination">
+    <button onclick="goToPage()">Search</button>
+</div>
+
+    </div>
+
+</section>
+
+<section class="destinations" id="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <p class="subtitle">
+        Discover India's most loved travel destinations
+    </p>
+
+    <div class="cards" id="destinationCards">
+
+        <div class="card">
+            <img src="image3/images/goa.jpeg" alt="Goa">
+            <h3>Goa</h3>
+            <p>Famous for beaches, nightlife and water sports.</p>
+            <a href="goa.html" class="explore-btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="image3/images/rajasthan.jpeg" alt="Jaipur">
+            <h3>Jaipur</h3>
+            <p>Experience royal palaces and rich heritage.</p>
+            <a href="jaipur.html" class="explore-btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="image3/images/manali.jpeg" alt="Manali">
+            <h3>Manali</h3>
+            <p>Snow-capped mountains and adventure activities.</p>
+            <a href="manali.html" class="explore-btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="image3/images/kerala.jpeg" alt="Kerala">
+            <h3>Kerala</h3>
+            <p>Beautiful backwaters and lush greenery.</p>
+            <a href="kerala.html" class="explore-btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="image3/images/mumbai.jpeg" alt="Mumbai">
+            <h3>Mumbai</h3>
+            <p>City of dreams, street food and Bollywood vibes.</p>
+            <a href="mumbai.html" class="explore-btn">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="image3/images/uttarpradesh.jpeg" alt="Uttarpradesh">
+            <h3>Uttarpradesh</h3>
+            <p>Home of Taj Mahal, heritage cities and spirituality.</p>
+           <a href="uttarpradesh.html" class="explore-btn">Explore</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="why-choose">
+    <h2>Why Choose Us</h2>
+
+    <div class="why-container">
+
+        <div class="why-box">
+            <div class="icon">💰</div>
+            <h3>Affordable Packages</h3>
+            <p>Best travel experiences at budget-friendly prices.</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">🧭</div>
+            <h3>Trusted Guides</h3>
+            <p>Experienced and verified travel guides for your safety.</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">⚡</div>
+            <h3>Easy Booking</h3>
+            <p>Simple and fast online booking system.</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">📞</div>
+            <h3>24/7 Support</h3>
+            <p>We are always available to help you anytime.</p>
+        </div>
+
+    </div>
+</section>
+<section class="give-review" id="reviews">
+    <h2>Share Your Experience</h2>
+
+    <div class="review-form">
+
+        <input type="text" id="name" placeholder="Your Name">
+
+        <textarea id="message" rows="4" placeholder="Write your review..."></textarea>
+
+        <select id="rating">
+            <option value="">Select Rating</option>
+            <option>⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <button onclick="submitReview()">Submit Review</button>
+
+    </div>
+
+    <div id="new-reviews"></div>
+</section>
+<section class="reviews">
+    <h2>What Our Travelers Say</h2>
+
+    <div class="review-container">
+
+        <div class="review-card">
+            <p>"Amazing experience! Everything was well organized and smooth."</p>
+            <h4>— Aanya Sharma</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="review-card">
+            <p>"Best travel service I’ve used. Highly recommended!"</p>
+            <h4>— Rahul Verma</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+        </div>
+
+        <div class="review-card">
+            <p>"Affordable packages and very friendly support team."</p>
+            <h4>— Priya Singh</h4>
+            <div class="stars">⭐⭐⭐⭐</div>
+        </div>
+
+    </div>
+</section>
+<section class="cta">
+    <div class="cta-box">
+        <h2>Ready to Explore the World?</h2>
+        <p>Book your dream trip now and get the best travel deals.</p>
+
+        <button onclick="openBooking()">Book Now</button>
+    </div>
+</section>
+<section class="faq" id="faq">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <h3>What is the best time to travel in India?</h3>
+            <p>October to March is generally the best time for most destinations.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Are the travel packages affordable?</h3>
+            <p>Yes, we offer budget-friendly as well as premium packages.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I customize my trip?</h3>
+            <p>Yes, you can customize destinations and plans as per your needs.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+            <h3>Email</h3>
+            <p>info@travelworld.com</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Phone</h3>
+            <p>+91 9876543210</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Location</h3>
+            <p>India</p>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Travel World</h3>
+            <p>Explore the world with the best travel experiences and affordable packages.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#cta">Book</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: info@travelworld.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+
+    </div>
+
+    <p class="copyright">© 2026 TravelWorld. All Rights Reserved.</p>
+</footer>
+    
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+
+<script>
+const firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_PROJECT.firebaseapp.com",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_PROJECT.appspot.com",
+    messagingSenderId: "XXXX",
+    appId: "XXXX"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+</script>
+</body>
+</html>
